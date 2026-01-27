@@ -1,0 +1,11 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#f9fafb"/>
+  <rect x="70" y="110" width="260" height="180" fill="#DC2626" rx="8"/>
+  <rect x="85" y="125" width="230" height="90" fill="#1f2937" rx="4"/>
+  <text x="200" y="180" font-family="Arial" font-size="16" font-weight="bold" fill="#DC2626" text-anchor="middle">LCD DISPLAY</text>
+  <text x="200" y="245" font-family="Arial" font-size="22" font-weight="bold" fill="white" text-anchor="middle">LUMINOUS</text>
+  <text x="200" y="270" font-family="Arial" font-size="16" fill="white" text-anchor="middle">2000VA</text>
+  <circle cx="130" cy="310" r="8" fill="#10b981"/>
+  <circle cx="160" cy="310" r="8" fill="#fbbf24"/>
+  <circle cx="190" cy="310" r="8" fill="#3b82f6"/>
+</svg>

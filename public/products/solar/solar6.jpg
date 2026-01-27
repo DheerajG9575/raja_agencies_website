@@ -1,0 +1,12 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#f3f4f6"/>
+  <ellipse cx="200" cy="150" rx="120" ry="100" fill="#DC2626"/>
+  <ellipse cx="200" cy="150" rx="100" ry="80" fill="#991B1B"/>
+  <rect x="120" y="240" width="160" height="120" fill="#374151" rx="8"/>
+  <rect x="140" y="260" width="120" height="80" fill="#1f2937" rx="4"/>
+  <line x1="80" y1="150" x2="120" y2="150" stroke="#DC2626" stroke-width="8"/>
+  <line x1="280" y1="150" x2="320" y2="150" stroke="#DC2626" stroke-width="8"/>
+  <circle cx="200" cy="150" r="15" fill="#fbbf24"/>
+  <text x="200" y="305" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">STORAGE</text>
+  <text x="200" y="380" font-family="Arial" font-size="20" font-weight="bold" fill="#DC2626" text-anchor="middle">Solar Water Heater</text>
+</svg>

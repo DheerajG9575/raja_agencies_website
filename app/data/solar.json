@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Monocrystalline Solar Panel 330W",
+    "image": "/products/solar/solar1.jpg",
+    "specs": [
+      "Power: 330W",
+      "Efficiency: 19.5%",
+      "Warranty: 25 Years",
+      "Type: Monocrystalline"
+    ],
+    "price": "₹9,500",
+    "category": "solar",
+    "type": "panel"
+  },
+  {
+    "id": 2,
+    "name": "Polycrystalline Solar Panel 250W",
+    "image": "/products/solar/solar2.jpg",
+    "specs": [
+      "Power: 250W",
+      "Efficiency: 16.2%",
+      "Warranty: 25 Years",
+      "Type: Polycrystalline"
+    ],
+    "price": "₹6,800",
+    "category": "solar",
+    "type": "panel"
+  },
+  {
+    "id": 3,
+    "name": "3kW On-Grid Solar System",
+    "image": "/products/solar/solar3.jpg",
+    "specs": [
+      "Capacity: 3kW",
+      "Panels: 10 x 330W",
+      "Inverter: Grid-Tie",
+      "Installation Included"
+    ],
+    "price": "₹1,85,000",
+    "category": "solar",
+    "type": "commercial"
+  },
+  {
+    "id": 4,
+    "name": "5kW Off-Grid Solar System",
+    "image": "/products/solar/solar4.jpg",
+    "specs": [
+      "Capacity: 5kW",
+      "Panels: 16 x 330W",
+      "Battery: 4 x 150Ah",
+      "Installation Included"
+    ],
+    "price": "₹3,25,000",
+    "category": "solar",
+    "type": "residential"
+  },
+  {
+    "id": 5,
+    "name": "10kW Commercial Solar System",
+    "image": "/products/solar/solar5.jpg",
+    "specs": [
+      "Capacity: 10kW",
+      "Panels: 32 x 330W",
+      "Inverter: Commercial Grade",
+      "Installation Included"
+    ],
+    "price": "₹5,50,000",
+    "category": "solar",
+    "type": "commercial"
+  },
+  {
+    "id": 6,
+    "name": "Solar Water Heater 200L",
+    "image": "/products/solar/solar6.jpg",
+    "specs": [
+      "Capacity: 200 Liters",
+      "Type: ETC",
+      "Warranty: 5 Years",
+      "Installation Included"
+    ],
+    "price": "₹28,500",
+    "category": "solar",
+    "type": "residential"
+  }
+]

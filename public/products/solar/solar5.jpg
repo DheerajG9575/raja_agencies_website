@@ -1,0 +1,17 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#0f172a"/>
+  <g>
+    <rect x="30" y="50" width="100" height="65" fill="#1e40af" stroke="#DC2626" stroke-width="2" rx="2"/>
+    <rect x="150" y="50" width="100" height="65" fill="#1e40af" stroke="#DC2626" stroke-width="2" rx="2"/>
+    <rect x="270" y="50" width="100" height="65" fill="#1e40af" stroke="#DC2626" stroke-width="2" rx="2"/>
+    <rect x="30" y="130" width="100" height="65" fill="#1e40af" stroke="#DC2626" stroke-width="2" rx="2"/>
+    <rect x="150" y="130" width="100" height="65" fill="#1e40af" stroke="#DC2626" stroke-width="2" rx="2"/>
+    <rect x="270" y="130" width="100" height="65" fill="#1e40af" stroke="#DC2626" stroke-width="2" rx="2"/>
+    <rect x="30" y="210" width="100" height="65" fill="#1e40af" stroke="#DC2626" stroke-width="2" rx="2"/>
+    <rect x="150" y="210" width="100" height="65" fill="#1e40af" stroke="#DC2626" stroke-width="2" rx="2"/>
+    <rect x="270" y="210" width="100" height="65" fill="#1e40af" stroke="#DC2626" stroke-width="2" rx="2"/>
+  </g>
+  <text x="200" y="310" font-family="Arial" font-size="18" font-weight="bold" fill="#DC2626" text-anchor="middle">COMMERCIAL GRADE</text>
+  <text x="200" y="340" font-family="Arial" font-size="28" font-weight="bold" fill="#EF4444" text-anchor="middle">10kW System</text>
+  <text x="200" y="370" font-family="Arial" font-size="14" fill="white" text-anchor="middle">32 Premium Panels</text>
+</svg>

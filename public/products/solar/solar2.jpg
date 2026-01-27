@@ -1,0 +1,17 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#1e293b"/>
+  <rect x="50" y="80" width="300" height="240" fill="#0f172a" stroke="#EF4444" stroke-width="4" rx="6"/>
+  <g id="cells">
+    <rect x="70" y="100" width="80" height="60" fill="#3b82f6" stroke="#EF4444" stroke-width="1"/>
+    <rect x="160" y="100" width="80" height="60" fill="#3b82f6" stroke="#EF4444" stroke-width="1"/>
+    <rect x="250" y="100" width="80" height="60" fill="#3b82f6" stroke="#EF4444" stroke-width="1"/>
+    <rect x="70" y="170" width="80" height="60" fill="#3b82f6" stroke="#EF4444" stroke-width="1"/>
+    <rect x="160" y="170" width="80" height="60" fill="#3b82f6" stroke="#EF4444" stroke-width="1"/>
+    <rect x="250" y="170" width="80" height="60" fill="#3b82f6" stroke="#EF4444" stroke-width="1"/>
+    <rect x="70" y="240" width="80" height="60" fill="#3b82f6" stroke="#EF4444" stroke-width="1"/>
+    <rect x="160" y="240" width="80" height="60" fill="#3b82f6" stroke="#EF4444" stroke-width="1"/>
+    <rect x="250" y="240" width="80" height="60" fill="#3b82f6" stroke="#EF4444" stroke-width="1"/>
+  </g>
+  <text x="200" y="350" font-family="Arial" font-size="20" font-weight="bold" fill="#EF4444" text-anchor="middle">POLYCRYSTALLINE</text>
+  <text x="200" y="375" font-family="Arial" font-size="16" fill="white" text-anchor="middle">250W</text>
+</svg>

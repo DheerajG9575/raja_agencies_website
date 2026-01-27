@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Luminous Zelio 1100VA",
+    "image": "/products/inverters/inverter1.jpg",
+    "specs": [
+      "Capacity: 1100VA/12V",
+      "Pure Sine Wave",
+      "Smart Charging",
+      "LCD Display"
+    ],
+    "price": "₹6,500",
+    "category": "inverter"
+  },
+  {
+    "id": 2,
+    "name": "Microtek UPS 1130VA",
+    "image": "/products/inverters/inverter2.jpg",
+    "specs": [
+      "Capacity: 1130VA",
+      "Pure Sine Wave",
+      "MCB Protection",
+      "LED Indicators"
+    ],
+    "price": "₹6,800",
+    "category": "inverter"
+  },
+  {
+    "id": 3,
+    "name": "Exide 1050VA Inverter",
+    "image": "/products/inverters/inverter3.jpg",
+    "specs": [
+      "Capacity: 1050VA",
+      "Pure Sine Wave",
+      "Overload Protection",
+      "Digital Display"
+    ],
+    "price": "₹6,200",
+    "category": "inverter"
+  },
+  {
+    "id": 4,
+    "name": "Luminous Cruze 2KVA",
+    "image": "/products/inverters/inverter4.jpg",
+    "specs": [
+      "Capacity: 2000VA/24V",
+      "Pure Sine Wave",
+      "MOSFET Technology",
+      "LCD Display"
+    ],
+    "price": "₹12,500",
+    "category": "inverter"
+  },
+  {
+    "id": 5,
+    "name": "Microtek Sinewave 1500VA",
+    "image": "/products/inverters/inverter5.jpg",
+    "specs": [
+      "Capacity: 1500VA",
+      "Pure Sine Wave",
+      "Smart Charging",
+      "LCD Display"
+    ],
+    "price": "₹8,900",
+    "category": "inverter"
+  },
+  {
+    "id": 6,
+    "name": "Exide 1500VA MPPT",
+    "image": "/products/inverters/inverter6.jpg",
+    "specs": [
+      "Capacity: 1500VA",
+      "MPPT Technology",
+      "Solar Compatible",
+      "LCD Display"
+    ],
+    "price": "₹9,800",
+    "category": "inverter"
+  }
+]
