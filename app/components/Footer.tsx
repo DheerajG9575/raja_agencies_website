@@ -15,7 +15,7 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-[#EF4444] mb-4">Raja Agencies</h3>
+            <h3 className="text-2xl font-bold text-[#EF4444] mb-4">Exide Power Systems</h3>
             <p className="text-gray-300 mb-2">Sales & Services Since 1992</p>
             <p className="text-gray-400 text-sm">
               Your trusted partner for batteries, inverters, solar panels, and installation services.
@@ -60,15 +60,38 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-gray-300">
                 <Phone size={18} className="text-[#EF4444]" />
-                <span>+91 XXX-XXX-XXXX</span>
+                <div className="flex flex-col">
+                  <a href="tel:+917893456161" className="hover:text-[#EF4444] transition-colors">
+                    +91 78934 56161
+                  </a>
+                  <a href="tel:+917036987953" className="hover:text-[#EF4444] transition-colors">
+                    +91 70369 87953
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3 text-gray-300">
                 <Mail size={18} className="text-[#EF4444]" />
-                <span>info@rajaagencies.com</span>
+                <a
+                  href="mailto:rajaagenciesgnt@gmail.com"
+                  className="hover:text-[#EF4444] transition-colors"
+                >
+                  rajaagenciesgnt@gmail.com
+                </a>
               </li>
               <li className="flex items-center gap-3 text-gray-300">
                 <MapPin size={18} className="text-[#EF4444]" />
-                <span>Your Location, City</span>
+                <button
+                  type="button"
+                  className="text-left hover:text-[#EF4444] transition-colors underline-offset-2 hover:underline"
+                  onClick={() => {
+                    window.open(
+                      'https://www.google.com/maps/search/?api=1&query=6th%20lane%20srinivasaraopet%20G.T.%20road%2C%20Guntur%20-%20522004',
+                      '_blank'
+                    );
+                  }}
+                >
+                  6th lane srinivasaraopet, G.T. road, Guntur - 522004
+                </button>
               </li>
             </ul>
           </motion.div>
@@ -81,7 +104,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm"
         >
-          <p>&copy; {new Date().getFullYear()} Raja Agencies. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Exide Power Systems. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

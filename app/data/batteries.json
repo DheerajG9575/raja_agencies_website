@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Exide Inverter Battery 150Ah",
+    "brand": "Exide",
     "image": "/products/batteries/battery1.jpg",
     "specs": [
       "Capacity: 150Ah",
@@ -9,38 +10,12 @@
       "Type: Tubular",
       "Voltage: 12V"
     ],
-    "price": "₹12,500",
-    "category": "battery"
-  },
-  {
-    "id": 2,
-    "name": "Luminous RC 18000 150Ah",
-    "image": "/products/batteries/battery2.jpg",
-    "specs": [
-      "Capacity: 150Ah",
-      "Warranty: 60 Months",
-      "Type: Tall Tubular",
-      "Voltage: 12V"
-    ],
-    "price": "₹13,800",
-    "category": "battery"
-  },
-  {
-    "id": 3,
-    "name": "Amaron Current 150Ah",
-    "image": "/products/batteries/battery3.jpg",
-    "specs": [
-      "Capacity: 150Ah",
-      "Warranty: 36 Months",
-      "Type: Flat Plate",
-      "Voltage: 12V"
-    ],
-    "price": "₹11,200",
     "category": "battery"
   },
   {
     "id": 4,
     "name": "Exide Inva Master 200Ah",
+    "brand": "Exide",
     "image": "/products/batteries/battery4.jpg",
     "specs": [
       "Capacity: 200Ah",
@@ -48,33 +23,6 @@
       "Type: Tubular",
       "Voltage: 12V"
     ],
-    "price": "₹16,500",
-    "category": "battery"
-  },
-  {
-    "id": 5,
-    "name": "Luminous Red Charge 180Ah",
-    "image": "/products/batteries/battery5.jpg",
-    "specs": [
-      "Capacity: 180Ah",
-      "Warranty: 48 Months",
-      "Type: Tubular",
-      "Voltage: 12V"
-    ],
-    "price": "₹14,900",
-    "category": "battery"
-  },
-  {
-    "id": 6,
-    "name": "Microtek Tuff Charge 150Ah",
-    "image": "/products/batteries/battery6.jpg",
-    "specs": [
-      "Capacity: 150Ah",
-      "Warranty: 42 Months",
-      "Type: Tubular",
-      "Voltage: 12V"
-    ],
-    "price": "₹12,800",
     "category": "battery"
   }
 ]

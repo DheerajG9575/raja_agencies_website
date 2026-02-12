@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Raja Agencies - Sales & Services Since 1992",
-  description: "Leading provider of batteries, inverters, solar panels, and installation services. Serving commercial and non-commercial clients since 1992.",
+  title: "Exide Power Systems - Sales & Services Since 1992",
+  description: "Leading provider of Exide batteries, inverters, solar panels, and installation services. Serving commercial and non-commercial clients since 1992.",
 };
 
 export default function RootLayout({

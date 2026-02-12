@@ -184,7 +184,6 @@ export default function Solar() {
                   name={product.name}
                   image={product.image}
                   specs={product.specs}
-                  price={product.price}
                   delay={index * 0.05}
                 />
               </motion.div>
@@ -267,7 +266,7 @@ export default function Solar() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => window.location.href = 'mailto:info@rajaagencies.com?subject=Solar Installation Inquiry'}
+                onClick={() => window.location.href = 'mailto:rajaagenciesgnt@gmail.com?subject=Solar Installation Inquiry'}
                 className="bg-white text-[#DC2626] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg"
               >
                 Request Free Consultation

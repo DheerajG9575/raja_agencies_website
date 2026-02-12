@@ -6,32 +6,32 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ServiceBlock from './components/ServiceBlock';
 import Carousel from './components/Carousel';
+import RecommendationSection from './components/RecommendationSection';
 
 export default function Home() {
   // Sample carousel images for batteries/inverters
   const batteryImages = [
     '/products/batteries/battery1.jpg',
-    '/products/batteries/battery2.jpg',
-    '/products/batteries/battery3.jpg',
-    '/products/inverters/inverter1.jpg',
-    '/products/inverters/inverter2.jpg',
+    '/products/batteries/battery4.jpg',
+    '/products/inverters/inverter3.jpg',
+    '/products/inverters/inverter6.jpg',
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
       <Header />
       
-      <main className="pt-24">
+      <main className="pt-20">
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-20 text-center">
+        <section className="container mx-auto px-4 py-4 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="mb-8"
+            className="mb-3"
           >
             {/* Logo - Using styled text since user will provide image later */}
-            <div className="mb-6 flex justify-center">
+            <div className="mb-3 flex justify-center">
               <motion.div
                 initial={{ rotateY: 0 }}
                 animate={{ rotateY: 360 }}
@@ -39,7 +39,7 @@ export default function Home() {
                 className="bg-gradient-to-br from-[#DC2626] to-[#991B1B] text-white px-12 py-8 rounded-2xl shadow-2xl"
               >
                 <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-                  Raja Agencies
+                  Exide Power Systems
                 </h1>
               </motion.div>
             </div>
@@ -61,7 +61,7 @@ export default function Home() {
             initial={{ width: 0 }}
             animate={{ width: '100%' }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="h-1 bg-gradient-to-r from-transparent via-[#DC2626] to-transparent max-w-md mx-auto mb-12"
+            className="h-1 bg-gradient-to-r from-transparent via-[#DC2626] to-transparent max-w-md mx-auto mb-4"
           />
 
           {/* Subtitle */}
@@ -69,7 +69,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1 }}
-            className="text-lg text-gray-600 max-w-2xl mx-auto mb-20"
+            className="text-lg text-gray-600 max-w-2xl mx-auto mb-2"
           >
             Your trusted partner for quality batteries, inverters, solar solutions, 
             and professional installation services.
@@ -83,7 +83,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900"
+            className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900"
           >
             Our <span className="text-[#DC2626]">Services</span>
           </motion.h2>
@@ -93,7 +93,7 @@ export default function Home() {
             <ServiceBlock
               title="Batteries & Inverters"
               description="Wide range of high-quality batteries and inverters from leading brands. Find the perfect power backup solution for your needs."
-              icon={<Battery size={32} />}
+              icon={<Battery size={24} />}
               href="/batteriesandinverters"
               delay={0.1}
             >
@@ -104,47 +104,64 @@ export default function Home() {
             <ServiceBlock
               title="Solar Solutions"
               description="Professional solar panel installation for commercial and residential properties. Harness renewable energy and reduce electricity costs."
-              icon={<Sun size={32} />}
+              icon={<Sun size={24} />}
               href="/solar"
               delay={0.2}
             >
-              <div className="grid grid-cols-2 gap-2 mb-4">
-                <div className="bg-gradient-to-br from-[#FEE2E2] to-white p-4 rounded-lg text-center border border-[#DC2626]/20">
-                  <p className="text-sm font-semibold text-[#DC2626]">Commercial</p>
-                  <p className="text-xs text-gray-600 mt-1">Large-scale installations</p>
+              <div className="grid grid-cols-2 gap-2 mb-3">
+                <div className="bg-gradient-to-br from-[#FEE2E2] to-white p-3 rounded-lg text-center border border-[#DC2626]/20">
+                  <p className="text-xs font-semibold text-[#DC2626]">Commercial</p>
+                  <p className="text-[0.65rem] text-gray-600 mt-0.5">Large-scale installations</p>
                 </div>
-                <div className="bg-gradient-to-br from-[#FEE2E2] to-white p-4 rounded-lg text-center border border-[#DC2626]/20">
-                  <p className="text-sm font-semibold text-[#DC2626]">Residential</p>
-                  <p className="text-xs text-gray-600 mt-1">Home solar systems</p>
+                <div className="bg-gradient-to-br from-[#FEE2E2] to-white p-3 rounded-lg text-center border border-[#DC2626]/20">
+                  <p className="text-xs font-semibold text-[#DC2626]">Residential</p>
+                  <p className="text-[0.65rem] text-gray-600 mt-0.5">Home solar systems</p>
+                </div>
+              </div>
+              <div className="space-y-1.5">
+                <div className="flex items-center gap-2 text-xs text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-[#DC2626] rounded-full"></span>
+                  Professional Installation
+                </div>
+                <div className="flex items-center gap-2 text-xs text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-[#DC2626] rounded-full"></span>
+                  Regular Maintenance
+                </div>
+                <div className="flex items-center gap-2 text-xs text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-[#DC2626] rounded-full"></span>
+                  24/7 Repair Support
                 </div>
               </div>
             </ServiceBlock>
 
             {/* Block 3: Services */}
             <ServiceBlock
-              title="Installation & Services"
-              description="Expert installation, maintenance, and repair services. Our experienced technicians ensure optimal performance and longevity."
-              icon={<Wrench size={32} />}
+              title="Repair & Services"
+              description="We repair inverters, online UPS, TV and stabilizers. Our experienced technicians ensure optimal performance and quick turnaround."
+              icon={<Wrench size={24} />}
               href="/services"
               delay={0.3}
             >
-              <div className="space-y-2">
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-[#DC2626] rounded-full"></span>
-                  Professional Installation
+              <div className="space-y-1.5">
+                <div className="flex items-center gap-2 text-xs text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-[#DC2626] rounded-full"></span>
+                  Inverter Repairs
                 </div>
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-[#DC2626] rounded-full"></span>
-                  Regular Maintenance
+                <div className="flex items-center gap-2 text-xs text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-[#DC2626] rounded-full"></span>
+                  Online UPS Service
                 </div>
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-[#DC2626] rounded-full"></span>
-                  24/7 Repair Support
+                <div className="flex items-center gap-2 text-xs text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-[#DC2626] rounded-full"></span>
+                  TV & Stabilizer Repairs
                 </div>
               </div>
             </ServiceBlock>
           </div>
         </section>
+
+        {/* Recommendation Section */}
+        <RecommendationSection />
 
         {/* Trust Indicators */}
         <section className="bg-gradient-to-r from-[#DC2626] to-[#991B1B] py-16 mt-20">

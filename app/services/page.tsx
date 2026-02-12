@@ -254,7 +254,7 @@ export default function Services() {
                 </motion.a>
 
                 <motion.a
-                  href="mailto:info@rajaagencies.com"
+                  href="mailto:rajaagenciesgnt@gmail.com"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="flex items-center justify-center gap-3 bg-white text-[#DC2626] px-6 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg"

@@ -13,11 +13,20 @@ import inverters from '../data/inverters.json';
 
 export default function BatteriesAndInverters() {
   const [filter, setFilter] = useState<'all' | 'battery' | 'inverter'>('all');
+  const [brandFilter, setBrandFilter] = useState<'all' | 'exide' | 'amaron'>('all');
 
   const allProducts = [...batteries, ...inverters];
-  const filteredProducts = filter === 'all' 
+  
+  let filteredProducts = filter === 'all' 
     ? allProducts 
     : allProducts.filter(p => p.category === filter);
+  
+  // Apply brand filter
+  if (brandFilter !== 'all') {
+    filteredProducts = filteredProducts.filter(p => 
+      p.brand?.toLowerCase() === brandFilter.toLowerCase()
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
@@ -67,45 +76,96 @@ export default function BatteriesAndInverters() {
                 <h2 className="text-xl font-bold text-gray-900">Filter Products</h2>
               </div>
               
-              <div className="flex flex-wrap gap-3">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => setFilter('all')}
-                  className={`px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
-                    filter === 'all'
-                      ? 'bg-[#DC2626] text-white shadow-lg'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  All Products
-                </motion.button>
-                
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => setFilter('battery')}
-                  className={`px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
-                    filter === 'battery'
-                      ? 'bg-[#DC2626] text-white shadow-lg'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  Batteries Only
-                </motion.button>
-                
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => setFilter('inverter')}
-                  className={`px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
-                    filter === 'inverter'
-                      ? 'bg-[#DC2626] text-white shadow-lg'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  Inverters Only
-                </motion.button>
+              <div className="space-y-4">
+                {/* Category Filter */}
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-700 mb-2">By Category</h3>
+                  <div className="flex flex-wrap gap-3">
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => setFilter('all')}
+                      className={`px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
+                        filter === 'all'
+                          ? 'bg-[#DC2626] text-white shadow-lg'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      All Products
+                    </motion.button>
+                    
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => setFilter('battery')}
+                      className={`px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
+                        filter === 'battery'
+                          ? 'bg-[#DC2626] text-white shadow-lg'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      Batteries Only
+                    </motion.button>
+                    
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => setFilter('inverter')}
+                      className={`px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
+                        filter === 'inverter'
+                          ? 'bg-[#DC2626] text-white shadow-lg'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      Inverters Only
+                    </motion.button>
+                  </div>
+                </div>
+
+                {/* Brand Filter */}
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-700 mb-2">By Brand</h3>
+                  <div className="flex flex-wrap gap-3">
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => setBrandFilter('all')}
+                      className={`px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
+                        brandFilter === 'all'
+                          ? 'bg-[#DC2626] text-white shadow-lg'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      All Brands
+                    </motion.button>
+                    
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => setBrandFilter('exide')}
+                      className={`px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
+                        brandFilter === 'exide'
+                          ? 'bg-[#DC2626] text-white shadow-lg'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      Exide
+                    </motion.button>
+                    
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => setBrandFilter('amaron')}
+                      className={`px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
+                        brandFilter === 'amaron'
+                          ? 'bg-[#DC2626] text-white shadow-lg'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      Amaron
+                    </motion.button>
+                  </div>
+                </div>
               </div>
 
               <p className="text-sm text-gray-600 mt-4">
@@ -134,7 +194,6 @@ export default function BatteriesAndInverters() {
                   name={product.name}
                   image={product.image}
                   specs={product.specs}
-                  price={product.price}
                   delay={index * 0.05}
                 />
               </motion.div>
@@ -156,7 +215,7 @@ export default function BatteriesAndInverters() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => window.location.href = 'mailto:info@rajaagencies.com'}
+                onClick={() => window.location.href = 'mailto:rajaagenciesgnt@gmail.com'}
                 className="bg-white text-[#DC2626] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg"
               >
                 Contact Our Experts

@@ -8,11 +8,10 @@ interface ProductCardProps {
   name: string;
   image: string;
   specs: string[];
-  price: string;
   delay?: number;
 }
 
-export default function ProductCard({ name, image, specs, price, delay = 0 }: ProductCardProps) {
+export default function ProductCard({ name, image, specs, delay = 0 }: ProductCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
@@ -30,11 +29,6 @@ export default function ProductCard({ name, image, specs, price, delay = 0 }: Pr
           fill
           className="object-cover group-hover:scale-110 transition-transform duration-500"
         />
-        
-        {/* Price Badge */}
-        <div className="absolute top-3 right-3 bg-[#DC2626] text-white px-3 py-1.5 rounded-full font-bold text-sm shadow-lg">
-          {price}
-        </div>
       </div>
 
       {/* Content */}

@@ -54,7 +54,7 @@ export default function Carousel({ images, autoplay = true, interval = 3000 }: C
         <div className="flex">
           {images.map((image, index) => (
             <div key={index} className="flex-[0_0_100%] min-w-0">
-              <div className="relative aspect-[4/3] w-full bg-gray-100">
+              <div className="relative aspect-[16/9] w-full bg-gray-100">
                 <Image
                   src={image}
                   alt={`Slide ${index + 1}`}
@@ -73,31 +73,31 @@ export default function Carousel({ images, autoplay = true, interval = 3000 }: C
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={scrollPrev}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg backdrop-blur-sm transition-all"
+        className="absolute left-1 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-1.5 rounded-full shadow-lg backdrop-blur-sm transition-all"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="text-[#DC2626]" size={24} />
+        <ChevronLeft className="text-[#DC2626]" size={18} />
       </motion.button>
 
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={scrollNext}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg backdrop-blur-sm transition-all"
+        className="absolute right-1 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-1.5 rounded-full shadow-lg backdrop-blur-sm transition-all"
         aria-label="Next slide"
       >
-        <ChevronRight className="text-[#DC2626]" size={24} />
+        <ChevronRight className="text-[#DC2626]" size={18} />
       </motion.button>
 
       {/* Dots Indicator */}
-      <div className="flex justify-center gap-2 mt-4">
+      <div className="flex justify-center gap-1.5 mt-2">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => emblaApi?.scrollTo(index)}
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
               index === selectedIndex 
-                ? 'bg-[#DC2626] w-8' 
+                ? 'bg-[#DC2626] w-6' 
                 : 'bg-gray-300 hover:bg-gray-400'
             }`}
             aria-label={`Go to slide ${index + 1}`}

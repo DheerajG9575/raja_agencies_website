@@ -19,7 +19,7 @@ export default function InquiryButton({
       onClick();
     } else {
       // Default action: open email
-      window.location.href = 'mailto:info@rajaagencies.com?subject=Product Inquiry';
+      window.location.href = 'mailto:rajaagenciesgnt@gmail.com?subject=Product Inquiry';
     }
   };
 
